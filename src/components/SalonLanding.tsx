@@ -45,10 +45,10 @@ const resolveSystemTheme = (): Theme => {
 };
 
 const GALLERY_ITEM_CONFIG = [
-  { key: "cutAndStyling", src: "/mostafa_meraji-haircut-6797912_1920.jpg" },
-  { key: "hairColoring", src: "/mostafa_meraji-haircut-6798047_1920.jpg" },
-  { key: "balayage", src: "/oga_red-hair-2258292_1920.jpg" },
-  { key: "perm", src: "/ninulia-hairdresser-659139_1920.jpg" },
+  { key: "cutAndStyling", src: "/pexels-cottonbro-7440132.jpg" },
+  { key: "hairColoring", src: "/pexels-anna-shekhvatova-136435696-10239026.jpg" },
+  { key: "balayage", src: "/pexels-enginakyurt-3065207.jpg" },
+  { key: "perm", src: "/mostafa_meraji-haircut-6798047_1920.jpg" },
   { key: "curls", src: "/7760815-hair-4657887_1920.jpg" },
   { key: "eveningStyle", src: "/sandryriveraa-bride-4989149_1920.jpg" },
 ] as const;
@@ -557,7 +557,7 @@ export function SalonLanding() {
         >
           <article className="hero-card glass">
             <Image
-              src="/annmariephotography-barbershop-4484297_1920.jpg"
+              src="/pexels-cottonbro-7440132.jpg"
               alt={t("hero.imageAltMain")}
               className="hero-bg-photo"
               fill

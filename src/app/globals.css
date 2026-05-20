@@ -995,13 +995,13 @@ h1 {
   gap: 0.82rem;
   background:
     linear-gradient(125deg, #ffffffd5 0%, #ffffffc4 60%, #ffffffb8 100%),
-    url("/oga_red-hair-2258292_1920.jpg") center / cover no-repeat;
+    url("/pexels-enginakyurt-3065207.jpg") center / cover no-repeat;
 }
 
 :root[data-theme="dark"] .maps-cta {
   background:
     linear-gradient(125deg, #0c0d10d8 0%, #0c0d10cb 60%, #0c0d10be 100%),
-    url("/oga_red-hair-2258292_1920.jpg") center / cover no-repeat;
+    url("/pexels-enginakyurt-3065207.jpg") center / cover no-repeat;
 }
 
 .maps-kicker {
