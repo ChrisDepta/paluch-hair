@@ -18,13 +18,7 @@ type A11ySettings = {
   readableTypography: boolean;
 };
 
-const LANGUAGE_OPTIONS: Array<{ code: Language; label: string }> = [
-  { code: "pl", label: "Polski" },
-  { code: "en", label: "English" },
-  { code: "de", label: "Deutsch" },
-  { code: "uk", label: "Ukraińska" },
-  { code: "ru", label: "Rosyjski" },
-];
+const LANGUAGE_OPTIONS = SUPPORTED_LANGUAGES;
 
 const EyeIcon = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -218,8 +212,12 @@ export function SiteFrame({ children }: SiteFrameProps) {
 
   const rawLanguage = i18nextInstance.resolvedLanguage ?? i18nextInstance.language ?? "pl";
   const language = (SUPPORTED_LANGUAGES.find((lng: string) => rawLanguage.startsWith(lng)) ?? "pl") as Language;
+  const languageOptions = LANGUAGE_OPTIONS.map((code) => ({
+    code,
+    label: t(`languageNames.${code}`),
+  }));
   const activeLanguageLabel =
-    LANGUAGE_OPTIONS.find((option) => option.code === language)?.label ?? language.toUpperCase();
+    languageOptions.find((option) => option.code === language)?.label ?? language.toUpperCase();
 
   const changeLanguage = (nextLanguage: Language) => {
     i18nextInstance.changeLanguage(nextLanguage);
@@ -255,7 +253,6 @@ export function SiteFrame({ children }: SiteFrameProps) {
           <Link href="/">{t("nav.home")}</Link>
           <Link href="/#about">{t("nav.about")}</Link>
           <Link href="/gallery">{t("nav.gallery")}</Link>
-          <Link href="/#reviews">{t("reviews.title")}</Link>
           <Link href="/pricing">{t("nav.pricing")}</Link>
           <Link href="/#contact">{t("nav.contact")}</Link>
         </nav>
@@ -275,8 +272,8 @@ export function SiteFrame({ children }: SiteFrameProps) {
             </button>
 
             {isLanguageMenuOpen && (
-              <div className="lang-menu" role="menu" aria-label="Language selector">
-                {LANGUAGE_OPTIONS.map((option) => (
+              <div className="lang-menu" role="menu" aria-label={t("nav.languageSelectorAria")}>
+                {languageOptions.map((option) => (
                   <button
                     key={option.code}
                     type="button"
@@ -292,8 +289,8 @@ export function SiteFrame({ children }: SiteFrameProps) {
             )}
           </div>
 
-          <button onClick={toggleTheme} className="pill-btn" type="button" aria-label="Toggle theme">
-            <span suppressHydrationWarning>{activeTheme === "light" ? "Dark" : "Light"}</span>
+          <button onClick={toggleTheme} className="pill-btn" type="button" aria-label={t("theme.toggleAria")}>
+            <span suppressHydrationWarning>{activeTheme === "light" ? t("theme.dark") : t("theme.light")}</span>
           </button>
         </div>
 
@@ -301,7 +298,7 @@ export function SiteFrame({ children }: SiteFrameProps) {
           className={`hamburger${isMobileMenuOpen ? " is-open" : ""}`}
           type="button"
           onClick={() => setIsMobileMenuOpen((open) => !open)}
-          aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu"}
+          aria-label={isMobileMenuOpen ? t("menu.close") : t("menu.open")}
           aria-expanded={isMobileMenuOpen}
         >
           <span className="ham-bar" />
@@ -328,7 +325,7 @@ export function SiteFrame({ children }: SiteFrameProps) {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 28, stiffness: 260 }}
-              aria-label="Menu mobilne"
+              aria-label={t("menu.mobileAria")}
             >
               <div className="mobile-menu-top">
                 <p className="brand">
@@ -339,7 +336,7 @@ export function SiteFrame({ children }: SiteFrameProps) {
                   className="mobile-menu-close"
                   type="button"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  aria-label="Zamknij menu"
+                  aria-label={t("menu.close")}
                 >
                   ✕
                 </button>
@@ -348,14 +345,13 @@ export function SiteFrame({ children }: SiteFrameProps) {
                 <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.home")}</Link>
                 <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.about")}</Link>
                 <Link href="/gallery" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.gallery")}</Link>
-                <Link href="/#reviews" onClick={() => setIsMobileMenuOpen(false)}>{t("reviews.title")}</Link>
                 <Link href="/pricing" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.pricing")}</Link>
                 <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.contact")}</Link>
               </div>
               <div className="mobile-menu-controls">
-                <p className="mobile-menu-section-label">Język / Language</p>
+                <p className="mobile-menu-section-label">{t("nav.languageSection")}</p>
                 <div className="mobile-lang-grid">
-                  {LANGUAGE_OPTIONS.map((option) => (
+                  {languageOptions.map((option) => (
                     <button
                       key={option.code}
                       type="button"
@@ -368,8 +364,15 @@ export function SiteFrame({ children }: SiteFrameProps) {
                     </button>
                   ))}
                 </div>
-                <button onClick={toggleTheme} className="pill-btn mobile-theme-btn" type="button" aria-label="Toggle theme">
-                  <span suppressHydrationWarning>{activeTheme === "light" ? "🌙 Dark" : "☀️ Light"}</span>
+                <button
+                  onClick={toggleTheme}
+                  className="pill-btn mobile-theme-btn"
+                  type="button"
+                  aria-label={t("theme.toggleAria")}
+                >
+                  <span suppressHydrationWarning>
+                    {activeTheme === "light" ? `🌙 ${t("theme.dark")}` : `☀️ ${t("theme.light")}`}
+                  </span>
                 </button>
               </div>
             </motion.nav>
@@ -379,7 +382,7 @@ export function SiteFrame({ children }: SiteFrameProps) {
 
       {children}
 
-      <div className="floating-controls" aria-label="Quick actions">
+      <div className="floating-controls" aria-label={t("nav.quickActionsAria")}>
         <div className="floating-group floating-left-group">
           {showBackToTop && (
             <button

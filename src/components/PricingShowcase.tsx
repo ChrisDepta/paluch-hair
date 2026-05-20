@@ -88,7 +88,7 @@ type PricingShowcaseProps = {
 
 export function PricingShowcase({ showMoreLink = false }: PricingShowcaseProps) {
   const { t } = useTranslation();
-  const allLengthsLabel = t("pricing.women.allLengths", { defaultValue: "każda długość" });
+  const allLengthsLabel = t("pricing.women.allLengths");
 
   const womenPricingRaw = t("pricing.women", { returnObjects: true });
   const womenPricingDefault: WomenPricing = {
@@ -160,7 +160,7 @@ export function PricingShowcase({ showMoreLink = false }: PricingShowcaseProps) 
         </div>
         {showMoreLink && (
           <Link href="/pricing" className="cta-secondary pricing-more-link">
-            Pełny cennik
+            {t("pricing.fullPriceList")}
           </Link>
         )}
       </div>
@@ -195,7 +195,7 @@ export function PricingShowcase({ showMoreLink = false }: PricingShowcaseProps) 
                   <span className="women-price-desktop">{item.medium}</span>
                   <span className="women-price-desktop">{item.long}</span>
 
-                  <div className="women-mobile-prices" aria-label={`${item.name} - długości włosów`}>
+                  <div className="women-mobile-prices" aria-label={t("pricing.women.mobileLengthsAria", { service: item.name })}>
                     {mobilePrices.map((entry) => (
                       <span className="women-mobile-price" key={`${item.name}-${entry.key}`} data-label={entry.label}>
                         {entry.value}

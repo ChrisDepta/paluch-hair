@@ -1,135 +1,220 @@
 {
   "nav": {
-    "home": "Golovna",
-    "about": "Pro mene",
-    "gallery": "Galeria",
-    "pricing": "Ciny",
-    "contact": "Kontakt",
-    "backToTop": "Do hory"
+    "home": "Головна",
+    "about": "Про мене",
+    "gallery": "Галерея",
+    "pricing": "Ціни",
+    "contact": "Контакти",
+    "backToTop": "Догори",
+    "languageSection": "Мова",
+    "languageSelectorAria": "Вибір мови",
+    "quickActionsAria": "Швидкі дії"
   },
   "hero": {
-    "badge": "Vroclav | Premium perukarska studio",
-    "title": "Tochnist. Spokiy. Styl.",
-    "subtitle": "Styl, svitlo i forma. Ja stvoryuyu indyvidualni stryzhky ta koloruvannya, yaki pidkreslyuyut charakter.",
-    "ctaCall": "Zatelefonuvaty i zapisatys",
-    "ctaReview": "Zalyshyty vidguk na Google Maps",
-    "rating": "Ocinka klientiv: 4.8/5 u Google (54 vidguky)"
+    "badge": "Вроцлав | Paluch Hair",
+    "title": "Точність. Спокій. Стиль.",
+    "subtitle": "Якщо ви шукаєте місце, де важливі повага, розмова та якісна робота під час кожного візиту, запрошуємо на вулицю Штабову у Вроцлаві.",
+    "ctaCall": "Зателефонувати та записатися",
+    "ctaReview": "Залишити відгук у Google Maps",
+    "rating": "Оцінка клієнтів: 4.8/5 у Google (54 відгуки)",
+    "imageAltMain": "Інтер'єр салону",
+    "imageAltSide": "Укладання волосся"
   },
   "about": {
-    "title": "Pro mene",
-    "text": "Mene zvaty Agnieszka Paluch. Ya pratsyuyu z volossyam yak z premium-materialom, poyednuyuchy tochnist i suchasnyy styl.",
-    "counters": {
-      "career": "Roky dosvidu vid 09.1992",
-      "salon": "Roky roboty salonu vid 10.2005",
-      "clients": "Otsinochna kilkist obslugovanykh klientiv",
-      "services": "Otsinochna kilkist vykonanykh posluh"
-    },
+    "title": "Про мене",
+    "intro": "Paluch Hair - професійний салон для людей, які очікують уважного обслуговування і надійної роботи.",
+    "text": "Власниця має понад 30 років досвіду, а салон на вулиці Штабовій працює безперервно з 2005-10-01. Кожна послуга починається з розмови та підбору рішення під потреби клієнта.",
     "points": [
-      "Indyvidualna konsultatsiya pered kozhnoyu posluhoyu",
-      "Pryrodni perehody ta tochnyi kontur",
-      "Komfortna atmosfera ta punktualni vizyty"
-    ]
+      "Ретельна консультація перед стрижкою та фарбуванням",
+      "Технічна точність відповідно до узгодженого обсягу",
+      "Культура обслуговування, заснована на повазі та спокійному спілкуванні"
+    ],
+    "counters": {
+      "career": "Роки досвіду",
+      "salon": "Роки роботи салону",
+      "clients": "Кількість обслужених клієнтів",
+      "services": "Кількість виконаних послуг"
+    },
+    "highlights": [
+      "Понад 30 років досвіду",
+      "Штабова, Вроцлав з 2005-10-01",
+      "Paluch Hair | paluch-hair.pl"
+    ],
+    "since": "Це місце для людей, які цінують чесний підхід, професійний результат і добру атмосферу без поспіху."
   },
   "gallery": {
-    "title": "Galeria",
-    "hint": "Tse nashi prykladovi roboty."
+    "title": "Галерея",
+    "hint": "Це наші приклади робіт.",
+    "fullLink": "Переглянути повну галерею",
+    "cards": {
+      "cutAndStyling": "Стрижка та укладання",
+      "hairColoring": "Фарбування волосся",
+      "balayage": "Балаяж",
+      "perm": "Хімічна завивка",
+      "curls": "Локони",
+      "eveningStyle": "Вечірня зачіска"
+    }
   },
   "reviews": {
-    "title": "Vidguky klientiv",
-    "subtitle": "Spravzhni vidguky z Google Maps",
+    "title": "Відгуки клієнтів",
+    "subtitle": "Справжні відгуки з Google Maps",
     "items": [
-      { "name": "Faustyna Szczepanska", "text": "Shchyro rekomenduyu tsey salon. Chudovyy servis i duzhe pryyemna perukarka." },
-      { "name": "Wioletta Kubisz", "text": "Duzhe rekomenduyu pani Agnieszku. Zavzhdy vykhodyu zadovolena." },
-      { "name": "Hubert 304", "text": "Rekomenduyu tse mistse. Tut vazhlyvyi rezultat i atmosfera." },
-      { "name": "Maryla Kmiecik", "text": "Khodzhu do pani Agnieszky vzhe 8 rokiv i duzhe zadovolena rezultatom." },
-      { "name": "Marta Lach", "text": "Duzhe profesiyno, teplo ta z velykym dosvidom." }
+      {
+        "name": "Dorota",
+        "text": "Ходжу до цього салону вже 15 років - я, мій чоловік, син і знайомі. Завжди всі дуже задоволені. З чистою совістю рекомендую."
+      },
+      {
+        "name": "Wioletta Kubisz",
+        "text": "Щиро рекомендую пані Агнешку. Вона знає свою справу, я завжди виходжу із салону задоволена."
+      },
+      {
+        "name": "Hubert 304",
+        "text": "Рекомендую цей салон. Тут важливі результат і атмосфера."
+      },
+      {
+        "name": "Maryla Kmicik",
+        "text": "Стрижуся у пані Агнешки 8 років і дуже задоволена. Вона вміє порадити та створює приємну атмосферу."
+      },
+      {
+        "name": "Marta Lach",
+        "text": "Кращої майстрині годі й шукати. Дуже привітна, професійна та досвідчена."
+      }
     ]
   },
+  "mapsCta": {
+    "kicker": "Відгуки про нас у Google",
+    "title": "Поділіться відгуком після візиту",
+    "text": "Ваш відгук допомагає іншим обрати перевірений салон і мотивує нас працювати ще краще.",
+    "rating": "4.8 / 5",
+    "primary": "Додати відгук",
+    "starsAria": "Оцінка Google 4.8 з 5 зірок"
+  },
   "pricing": {
-    "title": "Ciny",
+    "title": "Ціни",
+    "fullPriceList": "Повний прайс",
     "women": {
-      "title": "Zhinky",
-      "subtitle": "Dovzhyna volossya",
+      "title": "Жінки",
+      "subtitle": "Довжина волосся",
+      "allLengths": "будь-яка довжина",
+      "mobileLengthsAria": "{{service}} - довжина волосся",
       "columns": {
-        "service": "Posluha",
-        "short": "korotke",
-        "medium": "serednye",
-        "long": "dovhe"
+        "service": "Послуга",
+        "short": "коротке",
+        "medium": "середнє",
+        "long": "довге"
       },
       "items": [
-        { "name": "Stryzhka", "short": "90 zl", "medium": "100 zl", "long": "110 zl" },
-        { "name": "Stryzhka + ukladan", "short": "150 zl", "medium": "170 zl", "long": "180 - 200 zl" },
-        { "name": "Ukladannya", "short": "80 zl", "medium": "90 zl", "long": "100 - 120 zl" },
-        { "name": "Balejazh", "short": "270 zl", "medium": "280 - 330 zl", "long": "340 - 500 zl" },
-        { "name": "Farbuvannya", "short": "250 zl", "medium": "260 - 320 zl", "long": "320 - 500 zl" },
-        { "name": "Nanesennya farby", "short": "90 zl*", "medium": "100 zl*", "long": "120 zl*" },
-        { "name": "Ombre", "short": "-", "medium": "350 - 500 zl", "long": "510 - 800 zl" },
-        { "name": "Znyattya koloru + farbuvannya", "short": "400 - 500 zl", "medium": "510 - 600 zl", "long": "600 - 1000 zl" },
-        { "name": "Stryzhka chubchyka", "short": "-", "medium": "-", "long": "30 zl*" },
-        { "name": "Khimichna zavivka", "short": "230 zl", "medium": "260 zl", "long": "300 - 400 zl" },
-        { "name": "Pidnyattya koryniv", "short": "230 zl", "medium": "260 zl", "long": "300 - 400 zl" },
-        { "name": "Vechirnya zachiska", "short": "-", "medium": "120 zl", "long": "150 - 250 zl" },
-        { "name": "Lokony", "short": "-", "medium": "150 zl", "long": "160 - 200 zl" },
-        { "name": "Vidnovlyuyucha protsedura", "short": "-", "medium": "120 zl*", "long": "150 zl*" },
-        { "name": "Osvitlennya + tonuvannya", "short": "300 zl", "medium": "350 - 400 zl", "long": "450 - 600 zl" }
+        { "name": "Стрижка", "short": "90 zl", "medium": "100 zl", "long": "110 zl" },
+        { "name": "Стрижка + укладання", "short": "150 zl", "medium": "170 zl", "long": "180 - 200 zl" },
+        { "name": "Укладання", "short": "80 zl", "medium": "90 zl", "long": "100 - 120 zl" },
+        { "name": "Балаяж", "short": "270 zl", "medium": "280 - 330 zl", "long": "340 - 500 zl" },
+        { "name": "Фарбування", "short": "250 zl", "medium": "260 - 320 zl", "long": "320 - 500 zl" },
+        { "name": "Нанесення фарби", "short": "90 zl*", "medium": "100 zl*", "long": "120 zl*" },
+        { "name": "Омбре", "short": "-", "medium": "350 - 500 zl", "long": "510 - 800 zl" },
+        { "name": "Декапування + фарбування", "short": "400 - 500 zl", "medium": "510 - 600 zl", "long": "600 - 1000 zl" },
+        { "name": "Стрижка чубчика", "short": "-", "medium": "-", "long": "30 zl*" },
+        { "name": "Хімічна завивка", "short": "230 zl", "medium": "260 zl", "long": "300 - 400 zl" },
+        { "name": "Прикоренева завивка", "short": "230 zl", "medium": "260 zl", "long": "300 - 400 zl" },
+        { "name": "Вечірня зачіска", "short": "-", "medium": "120 zl", "long": "150 - 250 zl" },
+        { "name": "Локони", "short": "-", "medium": "150 zl", "long": "160 - 200 zl" },
+        { "name": "Відновлювальна процедура", "short": "-", "medium": "120 zl*", "long": "150 zl*" },
+        { "name": "Освітлення + тонування", "short": "300 zl", "medium": "350 - 400 zl", "long": "450 - 600 zl" }
       ]
     },
     "men": {
-      "title": "Choloviky",
+      "title": "Чоловіки",
       "items": [
-        { "name": "Stryzhka", "price": "70 zl" },
-        { "name": "Mashynkoyu (odna dovzhyna)", "price": "50 zl" },
-        { "name": "Stryzhka dovhoho volossya", "price": "100 zl" },
-        { "name": "Pidstrygannya borody", "price": "50 zl" },
-        { "name": "Pidstrygannya vusiv", "price": "20 zl" }
+        { "name": "Стрижка", "price": "70 zl" },
+        { "name": "Стрижка машинкою (одна довжина)", "price": "50 zl" },
+        { "name": "Стрижка довгого волосся", "price": "100 zl" },
+        { "name": "Підстригання бороди", "price": "50 zl" },
+        { "name": "Підстригання вусів", "price": "20 zl" }
       ]
     },
     "extensions": {
-      "title": "Naroshchuvannya ta zahushchennya volossya",
-      "installTitle": "Kreatyvnyy metod",
-      "correctionTitle": "Korektsiya kreatyvnym metodom",
-      "consult": "Bezkoshtovna konsultatsiya",
+      "title": "Нарощування та загущення волосся",
+      "installTitle": "Креативний метод",
+      "correctionTitle": "Корекція креативним методом",
+      "consult": "Безкоштовна консультація",
       "installItems": [
-        { "name": "Do 100 pasom", "price": "550 zl" },
-        { "name": "Do 125 pasom", "price": "600 zl" },
-        { "name": "Do 150 pasom", "price": "650 zl" },
-        { "name": "Do 200 pasom", "price": "700 zl" }
+        { "name": "Встановлення до 100 пасом", "price": "550 zl" },
+        { "name": "Встановлення до 125 пасом", "price": "600 zl" },
+        { "name": "Встановлення до 150 пасом", "price": "650 zl" },
+        { "name": "Встановлення до 200 пасом", "price": "700 zl" }
       ],
       "correctionItems": [
-        { "name": "Korektsiya do 100 pasom", "price": "600 zl" },
-        { "name": "Korektsiya do 125 pasom", "price": "650 zl" },
-        { "name": "Korektsiya do 150 pasom", "price": "700 zl" },
-        { "name": "Korektsiya do 200 pasom", "price": "750 zl" }
+        { "name": "Корекція до 100 пасом", "price": "600 zl" },
+        { "name": "Корекція до 125 пасом", "price": "650 zl" },
+        { "name": "Корекція до 150 пасом", "price": "700 zl" },
+        { "name": "Корекція до 200 пасом", "price": "750 zl" }
       ]
     },
-    "note": "* Vartist ne vklyuchaye stryzhku ta ukladan. Dlya duzhe hustogo abo dovgogo volossya tsina mozhe zminytys."
+    "note": "* Вартість не включає стрижку та укладання. Для дуже густого або довгого волосся ціна може змінитися."
   },
   "contact": {
-    "title": "Kontakt",
-    "phoneLabel": "Telefon",
+    "title": "Контакти",
+    "phoneLabel": "Телефон",
     "phone": "+48 71 796 46 64",
-    "company": "Agnieszka Gawel-Paluch",
-    "addressLabel": "Adres",
+    "company": "Paluch Hair",
+    "addressLabel": "Адреса",
     "address": "Sztabowa 6/8, 53-327 Wroclaw, Poland",
-    "hoursTitle": "Hodyny roboty",
+    "hoursTitle": "Години роботи",
     "hours": [
-      { "day": "Ponedilok - Pyatnytsya", "value": "09:00-19:00" },
-      { "day": "Subota", "value": "09:00-14:00" }
+      { "day": "Понеділок - П'ятниця", "value": "09:00-19:00" },
+      { "day": "Субота", "value": "09:00-14:00" }
     ],
-    "maps": "Vidkryty profil Google Maps",
-    "noForm": "Zapys lyshe telefonom."
+    "maps": "Відкрити профіль Google Maps",
+    "noForm": "Запис лише телефоном."
+  },
+  "theme": {
+    "toggleAria": "Перемкнути тему",
+    "dark": "Темна",
+    "light": "Світла"
+  },
+  "menu": {
+    "open": "Відкрити меню",
+    "close": "Закрити меню",
+    "mobileAria": "Мобільне меню"
+  },
+  "languageNames": {
+    "pl": "Польська",
+    "en": "Англійська",
+    "de": "Німецька",
+    "uk": "Українська",
+    "ru": "Російська"
+  },
+  "common": {
+    "brandTagline": "Agnieszka Paluch Hair"
+  },
+  "galleryGrid": {
+    "showMore": "Показати більше фото",
+    "scrollHint": "Прокрутіть ще трохи вниз, і з'явиться кнопка для завантаження наступної партії фото.",
+    "openPhotoAria": "Відкрити фото {{index}}",
+    "closePreviewAria": "Закрити перегляд",
+    "prevPhotoAria": "Попереднє фото",
+    "nextPhotoAria": "Наступне фото"
+  },
+  "galleryPage": {
+    "badge": "Галерея",
+    "title": "Наші роботи",
+    "description": "Запрошуємо переглянути наші роботи: стрижки, фарбування, балаяж, локони та вечірні зачіски. Кожне фото - це результат роботи з увагою до деталей. Натисніть на будь-яке фото, щоб збільшити його."
+  },
+  "pricingPage": {
+    "badge": "Ціни",
+    "title": "Ціни",
+    "description": "Зрозумілий перелік послуг і цін в одному місці."
   },
   "a11y": {
-    "openAria": "Nalashtuvannya dostupnosti",
-    "dialogAria": "Nalashtuvannya dostupnosti",
-    "closeAria": "Zakryty nalashtuvannya dostupnosti",
-    "title": "Dostupnist",
-    "intro": "Nalashtuyte vyglyad storinky pid svoi potreby: krashcha chytabelnist, vyshchyy kontrast i zruchnishi posylannya.",
-    "fontScale": "Rozmir tekstu",
-    "fontScaleSliderAria": "Povzunok rozmiru tekstu",
-    "highContrast": "Vysokyy kontrast",
-    "underlineLinks": "Pidkreslyty posylannya",
-    "readableTypography": "Chytabelnisha typohrafiya",
-    "reset": "Skynuty nalashtuvannya"
+    "openAria": "Налаштування доступності",
+    "dialogAria": "Налаштування доступності",
+    "closeAria": "Закрити налаштування доступності",
+    "title": "Доступність",
+    "intro": "Налаштуйте вигляд сторінки під свої потреби: краща читабельність, вищий контраст і зручніші посилання.",
+    "fontScale": "Розмір тексту",
+    "fontScaleSliderAria": "Повзунок розміру тексту",
+    "highContrast": "Високий контраст",
+    "underlineLinks": "Підкреслити посилання",
+    "readableTypography": "Читабельніша типографія",
+    "reset": "Скинути налаштування"
   }
 }

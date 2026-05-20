@@ -5,34 +5,55 @@
     "gallery": "Galerie",
     "pricing": "Preise",
     "contact": "Kontakt",
-    "backToTop": "Nach oben"
+    "backToTop": "Nach oben",
+    "languageSection": "Sprache",
+    "languageSelectorAria": "Sprachauswahl",
+    "quickActionsAria": "Schnellaktionen"
   },
   "hero": {
-    "badge": "Wroclaw | Premium Friseursalon",
+    "badge": "Wroclaw | Paluch Hair",
     "title": "Prazision. Ruhe. Stil.",
-    "subtitle": "Stil, Licht und Form. Ich kreiere individuelle Schnitte und Farben, die den Charakter unterstreichen.",
+    "subtitle": "Wenn Sie einen Ort suchen, an dem Gesprach, Respekt und sorgfaltige Arbeit bei jedem Besuch zahlen, sind Sie in der Sztabowa-Strasse in Wroclaw willkommen.",
     "ctaCall": "Anrufen und Termin buchen",
     "ctaReview": "Google-Bewertung abgeben",
-    "rating": "Bewertung: 4.8/5 bei Google (54 Bewertungen)"
+    "rating": "Bewertung: 4.8/5 bei Google (54 Bewertungen)",
+    "imageAltMain": "Saloninnenraum",
+    "imageAltSide": "Haarstyling"
   },
   "about": {
     "title": "Uber mich",
-    "text": "Ich bin Agnieszka Paluch und arbeite seit Jahren mit Haaren wie mit einem Premium-Material. Ich verbinde technische Prazision mit modernem Stil.",
+    "intro": "Paluch Hair ist ein professioneller Friseursalon fur Menschen, die eine gute Betreuung und ruhige, vertrauensvolle Arbeit erwarten.",
+    "text": "Die Inhaberin schneidet seit uber 30 Jahren Haare, und der Salon in der Sztabowa-Strasse arbeitet ohne Unterbrechung seit 2005-10-01. Jede Leistung beginnt mit einem Gesprach und einer individuellen Abstimmung auf die Bedurfnisse des Kunden.",
     "counters": {
-      "career": "Jahre Erfahrung seit 09.1992",
-      "salon": "Jahre Salonbetrieb seit 10.2005",
-      "clients": "Geschaetzte Anzahl bedienter Kundinnen und Kunden",
-      "services": "Geschaetzte Anzahl ausgefuehrter Leistungen"
+      "career": "Jahre Erfahrung",
+      "salon": "Jahre Salonbetrieb",
+      "clients": "Anzahl bedienter Kundinnen und Kunden",
+      "services": "Anzahl ausgefuhrter Leistungen"
     },
     "points": [
-      "Individuelle Beratung vor jeder Behandlung",
-      "Naturliche Ubergange und prazise Linien",
-      "Angenehme Atmosphare und punktliche Termine"
-    ]
+      "Sorgfaltige Beratung vor Schnitt und Farbung",
+      "Technisch prazise Arbeit nach Preisliste und Vereinbarung",
+      "Servicekultur auf Basis von Respekt und ruhiger Kommunikation"
+    ],
+    "highlights": [
+      "Uber 30 Jahre Erfahrung",
+      "Sztabowa, Wroclaw seit 2005-10-01",
+      "Paluch Hair | paluch-hair.pl"
+    ],
+    "since": "Dieser Salon ist fur Menschen, die einen fairen Umgang, professionelle Leistung und eine gute Atmosphare ohne Hektik schatzen."
   },
   "gallery": {
     "title": "Galerie",
-    "hint": "Das sind unsere beispielhaften Umsetzungen."
+    "hint": "Das sind unsere beispielhaften Umsetzungen.",
+    "fullLink": "Vollstandige Galerie ansehen",
+    "cards": {
+      "cutAndStyling": "Schnitt und Styling",
+      "hairColoring": "Haarfarbung",
+      "balayage": "Balayage",
+      "perm": "Dauerwelle",
+      "curls": "Locken",
+      "eveningStyle": "Abendfrisur"
+    }
   },
   "reviews": {
     "title": "Kundenmeinungen",
@@ -47,9 +68,12 @@
   },
   "pricing": {
     "title": "Preise",
+    "fullPriceList": "Vollstandige Preisliste",
     "women": {
       "title": "Damen",
       "subtitle": "Haarlange",
+      "allLengths": "alle Langen",
+      "mobileLengthsAria": "{{service}} - Haarlangen",
       "columns": {
         "service": "Leistung",
         "short": "kurz",
@@ -104,11 +128,19 @@
     },
     "note": "* Preis ohne Schnitt und Styling. Bei sehr dichtem oder langem Haar kann sich der Endpreis andern."
   },
+  "mapsCta": {
+    "kicker": "Bewertungen uber uns bei Google",
+    "title": "Teile dein Feedback nach dem Besuch",
+    "text": "Deine Bewertung hilft neuen Kunden bei der Wahl eines vertrauenswurdigen Salons und motiviert uns zur weiteren Arbeit.",
+    "rating": "4.8 / 5",
+    "primary": "Bewertung hinzufugen",
+    "starsAria": "Google-Bewertung 4.8 von 5 Sternen"
+  },
   "contact": {
     "title": "Kontakt",
     "phoneLabel": "Telefon",
     "phone": "+48 71 796 46 64",
-    "company": "Agnieszka Gawel-Paluch",
+    "company": "Paluch Hair",
     "addressLabel": "Adresse",
     "address": "Sztabowa 6/8, 53-327 Wroclaw, Polen",
     "hoursTitle": "Offnungszeiten",
@@ -118,6 +150,44 @@
     ],
     "maps": "Google Maps Profil offnen",
     "noForm": "Reservierungen nur telefonisch."
+  },
+  "theme": {
+    "toggleAria": "Design umschalten",
+    "dark": "Dunkel",
+    "light": "Hell"
+  },
+  "menu": {
+    "open": "Menu offnen",
+    "close": "Menu schliessen",
+    "mobileAria": "Mobiles Menu"
+  },
+  "languageNames": {
+    "pl": "Polnisch",
+    "en": "Englisch",
+    "de": "Deutsch",
+    "uk": "Ukrainisch",
+    "ru": "Russisch"
+  },
+  "common": {
+    "brandTagline": "Agnieszka Paluch Hair"
+  },
+  "galleryGrid": {
+    "showMore": "Mehr Fotos anzeigen",
+    "scrollHint": "Scrolle noch etwas weiter, dann erscheint der Button zum Laden weiterer Fotos.",
+    "openPhotoAria": "Foto {{index}} offnen",
+    "closePreviewAria": "Vorschau schliessen",
+    "prevPhotoAria": "Vorheriges Foto",
+    "nextPhotoAria": "Nachstes Foto"
+  },
+  "galleryPage": {
+    "badge": "Galerie",
+    "title": "Unsere Arbeiten",
+    "description": "Sieh dir unsere Arbeiten an: Schnitte, Farbungen, Balayage, Locken und Abendfrisuren. Jedes Foto zeigt ein Ergebnis mit viel Liebe zum Detail. Klicke auf ein Foto, um es zu vergroessern."
+  },
+  "pricingPage": {
+    "badge": "Preise",
+    "title": "Preise",
+    "description": "Eine klare Ubersicht aller Leistungen und Preise an einem Ort."
   },
   "a11y": {
     "openAria": "Barrierefreiheitseinstellungen",

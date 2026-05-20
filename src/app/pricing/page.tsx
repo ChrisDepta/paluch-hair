@@ -1,20 +1,15 @@
-import { PricingShowcase } from "@/components/PricingShowcase";
-import { SiteFrame } from "@/components/SiteFrame";
+import type { Metadata } from "next";
+import { PricingPageContent } from "@/components/PricingPageContent";
+
+export const metadata: Metadata = {
+  title: "Cennik",
+  description:
+    "Cennik uslug Paluch Hair we Wroclawiu: strzyzenie, modelowanie, koloryzacja, balayaz, ombre oraz uslugi fryzjerskie dla kobiet i mezczyzn.",
+  alternates: {
+    canonical: "/pricing",
+  },
+};
 
 export default function PricingPage() {
-  return (
-    <SiteFrame>
-      <main className="gallery-page-layout">
-        <section className="subpage-hero glass">
-          <div>
-            <span className="badge">Cennik</span>
-            <h1>Cennik</h1>
-            <p>Przejrzysty zestaw usług i cen w jednym miejscu.</p>
-          </div>
-        </section>
-
-        <PricingShowcase />
-      </main>
-    </SiteFrame>
-  );
+  return <PricingPageContent />;
 }

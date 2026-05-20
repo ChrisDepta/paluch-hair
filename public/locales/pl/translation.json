@@ -5,7 +5,10 @@
     "gallery": "Galeria",
     "pricing": "Cennik",
     "contact": "Kontakt",
-    "backToTop": "Powrót do góry"
+    "backToTop": "Powrót do góry",
+    "languageSection": "Język",
+    "languageSelectorAria": "Wybór języka",
+    "quickActionsAria": "Szybkie akcje"
   },
   "hero": {
     "badge": "Wrocław | Paluch Hair",
@@ -13,7 +16,9 @@
     "subtitle": "Jeśli szukasz miejsca, w którym liczy się rozmowa, szacunek i rzetelna praca przy każdej wizycie, zapraszamy na Sztabową we Wrocławiu.",
     "ctaCall": "Zadzwoń i umów termin",
     "ctaReview": "Dodaj opinię na Google Maps",
-    "rating": "Ocena klientek: 4.8/5 w Google (54 opinie)"
+    "rating": "Ocena klientek: 4.8/5 w Google (54 opinie)",
+    "imageAltMain": "Wnętrze salonu",
+    "imageAltSide": "Stylizacja fryzury"
   },
   "about": {
     "title": "O mnie",
@@ -39,7 +44,16 @@
   },
   "gallery": {
     "title": "Galeria",
-    "hint": "To są nasze przykładowe realizacje."
+    "hint": "To są nasze przykładowe realizacje.",
+    "fullLink": "Zobacz pełną galerię",
+    "cards": {
+      "cutAndStyling": "Strzyżenie i modelowanie",
+      "hairColoring": "Farbowanie włosów",
+      "balayage": "Baleyaż",
+      "perm": "Trwała ondulacja",
+      "curls": "Loki",
+      "eveningStyle": "Fryzura wieczorowa"
+    }
   },
   "reviews": {
     "title": "Opinie klientów",
@@ -72,13 +86,17 @@
     "title": "Podziel się swoją opinią po wizycie",
     "text": "Twoja opinia pomaga kolejnym osobom wybrać sprawdzony salon i daje nam motywację do dalszej pracy.",
     "rating": "4,8 / 5",
-    "primary": "Dodaj swoją opinię"
+    "primary": "Dodaj swoją opinię",
+    "starsAria": "Ocena Google 4.8 na 5 gwiazdek"
   },
   "pricing": {
     "title": "Cennik",
+    "fullPriceList": "Pełny cennik",
     "women": {
       "title": "Panie",
       "subtitle": "Długość włosów",
+      "allLengths": "każda długość",
+      "mobileLengthsAria": "{{service}} - długości włosów",
       "columns": {
         "service": "Usługa",
         "short": "krótkie",
@@ -152,6 +170,44 @@
     ],
     "maps": "Zobacz wizytówkę Google Maps",
     "noForm": "Rezerwacja odbywa się telefonicznie."
+  },
+  "theme": {
+    "toggleAria": "Przełącz motyw",
+    "dark": "Ciemny",
+    "light": "Jasny"
+  },
+  "menu": {
+    "open": "Otwórz menu",
+    "close": "Zamknij menu",
+    "mobileAria": "Menu mobilne"
+  },
+  "languageNames": {
+    "pl": "Polski",
+    "en": "Angielski",
+    "de": "Niemiecki",
+    "uk": "Ukraiński",
+    "ru": "Rosyjski"
+  },
+  "common": {
+    "brandTagline": "Agnieszka Paluch Hair"
+  },
+  "galleryGrid": {
+    "showMore": "Pokaż więcej zdjęć",
+    "scrollHint": "Przewiń jeszcze trochę, a pojawi się przycisk do wczytania kolejnej partii zdjęć.",
+    "openPhotoAria": "Otwórz zdjęcie {{index}}",
+    "closePreviewAria": "Zamknij podgląd",
+    "prevPhotoAria": "Poprzednie zdjęcie",
+    "nextPhotoAria": "Następne zdjęcie"
+  },
+  "galleryPage": {
+    "badge": "Galeria",
+    "title": "Nasze realizacje",
+    "description": "Zapraszamy do obejrzenia naszych realizacji - strzyżeń, koloryzacji, baleyażu, loków i fryzur wieczorowych. Każde zdjęcie to efekt pracy wykonanej z dbałością o szczegóły. Kliknij dowolne zdjęcie, aby powiększyć."
+  },
+  "pricingPage": {
+    "badge": "Cennik",
+    "title": "Cennik",
+    "description": "Przejrzysty zestaw usług i cen w jednym miejscu."
   },
   "a11y": {
     "openAria": "Ustawienia dostępności",

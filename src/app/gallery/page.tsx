@@ -1,9 +1,18 @@
 import fs from "fs/promises";
 import path from "path";
-import { GalleryGrid } from "@/components/GalleryGrid";
-import { SiteFrame } from "@/components/SiteFrame";
+import type { Metadata } from "next";
+import { GalleryPageContent } from "@/components/GalleryPageContent";
 
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
+
+export const metadata: Metadata = {
+  title: "Galeria",
+  description:
+    "Galeria realizacji Paluch Hair: strzyzenia, koloryzacje, balayaz, loki i fryzury wieczorowe wykonane we Wroclawiu.",
+  alternates: {
+    canonical: "/gallery",
+  },
+};
 
 async function getGalleryItems() {
   const galleryDir = path.join(process.cwd(), "public", "gallery");
@@ -22,24 +31,5 @@ async function getGalleryItems() {
 
 export default async function GalleryPage() {
   const items = await getGalleryItems();
-
-  return (
-    <SiteFrame>
-      <main className="gallery-page-layout">
-        <section className="subpage-hero glass">
-          <div>
-            <span className="badge">Galeria</span>
-            <h1>Nasze realizacje</h1>
-            <p>
-              Zapraszamy do obejrzenia naszych realizacji — strzyżeń, koloryzacji, baleyażu, loków i fryzur
-              wieczorowych. Każde zdjęcie to efekt pracy wykonanej z dbałością o szczegóły. Kliknij dowolne zdjęcie,
-              aby powiększyć.
-            </p>
-          </div>
-        </section>
-
-        <GalleryGrid items={items} initialCount={12} step={12} />
-      </main>
-    </SiteFrame>
-  );
+  return <GalleryPageContent items={items} />;
 }

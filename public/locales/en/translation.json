@@ -5,7 +5,10 @@
     "gallery": "Gallery",
     "pricing": "Pricing",
     "contact": "Contact",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "languageSection": "Language",
+    "languageSelectorAria": "Language selector",
+    "quickActionsAria": "Quick actions"
   },
   "hero": {
     "badge": "Wroclaw | Paluch Hair",
@@ -13,17 +16,19 @@
     "subtitle": "If you are looking for a salon where respect, conversation, and careful craft come first, you are welcome on Sztabowa Street in Wroclaw.",
     "ctaCall": "Call and book your visit",
     "ctaReview": "Leave a Google Maps review",
-    "rating": "Client rating: 4.8/5 on Google (54 reviews)"
+    "rating": "Client rating: 4.8/5 on Google (54 reviews)",
+    "imageAltMain": "Salon interior",
+    "imageAltSide": "Hair styling"
   },
   "about": {
     "title": "About",
     "intro": "Paluch Hair is a professional salon for people who expect thoughtful service and trustworthy work.",
     "text": "The owner has over 30 years of hairdressing experience, and the salon has been operating on Sztabowa Street since 2005-10-01. Every service starts with a real conversation and clear expectations.",
     "counters": {
-      "career": "Years of experience since 09.1992",
-      "salon": "Years of salon operation since 10.2005",
-      "clients": "Estimated number of clients served",
-      "services": "Estimated number of services performed"
+      "career": "Years of experience",
+      "salon": "Years of salon operation",
+      "clients": "Number of clients served",
+      "services": "Number of services performed"
     },
     "points": [
       "Careful consultation before cutting and coloring",
@@ -39,7 +44,16 @@
   },
   "gallery": {
     "title": "Gallery",
-    "hint": "These are our sample results."
+    "hint": "These are our sample results.",
+    "fullLink": "See full gallery",
+    "cards": {
+      "cutAndStyling": "Cut and styling",
+      "hairColoring": "Hair coloring",
+      "balayage": "Balayage",
+      "perm": "Perm",
+      "curls": "Curls",
+      "eveningStyle": "Evening hairstyle"
+    }
   },
   "reviews": {
     "title": "Client Reviews",
@@ -72,13 +86,17 @@
     "title": "Share your feedback after your visit",
     "text": "Your review helps new clients choose a trusted salon and motivates us to keep delivering great service.",
     "rating": "4.8 / 5",
-    "primary": "Add your review"
+    "primary": "Add your review",
+    "starsAria": "Google rating 4.8 out of 5 stars"
   },
   "pricing": {
     "title": "Pricing",
+    "fullPriceList": "Full price list",
     "women": {
       "title": "Women",
       "subtitle": "Hair length",
+      "allLengths": "all lengths",
+      "mobileLengthsAria": "{{service}} - hair lengths",
       "columns": {
         "service": "Service",
         "short": "short",
@@ -152,6 +170,44 @@
     ],
     "maps": "Open Google Maps profile",
     "noForm": "Appointments are made by phone only."
+  },
+  "theme": {
+    "toggleAria": "Toggle theme",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "menu": {
+    "open": "Open menu",
+    "close": "Close menu",
+    "mobileAria": "Mobile menu"
+  },
+  "languageNames": {
+    "pl": "Polish",
+    "en": "English",
+    "de": "German",
+    "uk": "Ukrainian",
+    "ru": "Russian"
+  },
+  "common": {
+    "brandTagline": "Agnieszka Paluch Hair"
+  },
+  "galleryGrid": {
+    "showMore": "Show more photos",
+    "scrollHint": "Scroll a bit more and the button for loading the next batch of photos will appear.",
+    "openPhotoAria": "Open photo {{index}}",
+    "closePreviewAria": "Close preview",
+    "prevPhotoAria": "Previous photo",
+    "nextPhotoAria": "Next photo"
+  },
+  "galleryPage": {
+    "badge": "Gallery",
+    "title": "Our work",
+    "description": "Take a look at our work: cuts, coloring, balayage, curls, and evening hairstyles. Each photo is the result of careful, detail-focused work. Click any photo to enlarge it."
+  },
+  "pricingPage": {
+    "badge": "Pricing",
+    "title": "Pricing",
+    "description": "A clear list of services and prices in one place."
   },
   "a11y": {
     "openAria": "Accessibility settings",

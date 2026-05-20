@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import "../i18n";
 
 type GalleryItem = {
   name: string;
@@ -21,6 +23,7 @@ const sectionAnimation = {
 };
 
 export function GalleryGrid({ items, initialCount = 12, step = 12 }: GalleryGridProps) {
+  const { t } = useTranslation();
   const [visibleCount, setVisibleCount] = useState(initialCount);
   const [showMoreButton, setShowMoreButton] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -85,11 +88,11 @@ export function GalleryGrid({ items, initialCount = 12, step = 12 }: GalleryGrid
             transition={{ duration: 0.4, delay: index * 0.03 }}
             onClick={() => setLightboxIndex(index)}
             style={{ cursor: "pointer" }}
-            aria-label={`Otwórz zdjęcie ${index + 1}`}
+            aria-label={t("galleryGrid.openPhotoAria", { index: index + 1 })}
           >
             <Image src={item.src} alt="" fill className="gallery-photo" sizes="(max-width: 768px) 100vw, 33vw" />
             <div>
-              <small>Agnieszka Paluch Hair</small>
+              <small>{t("common.brandTagline")}</small>
             </div>
           </motion.article>
         ))}
@@ -102,10 +105,10 @@ export function GalleryGrid({ items, initialCount = 12, step = 12 }: GalleryGrid
             type="button"
             onClick={() => setVisibleCount((count) => Math.min(count + step, items.length))}
           >
-            Pokaż więcej zdjęć
+            {t("galleryGrid.showMore")}
           </button>
         ) : (
-          hasMore && <p className="gallery-more-hint">Przewiń jeszcze trochę, a pojawi się przycisk do wczytania kolejnej partii zdjęć.</p>
+          hasMore && <p className="gallery-more-hint">{t("galleryGrid.scrollHint")}</p>
         )}
       </div>
 
@@ -128,7 +131,7 @@ export function GalleryGrid({ items, initialCount = 12, step = 12 }: GalleryGrid
               setTouchStartX(null);
             }}
           >
-            <button className="lightbox-close" type="button" onClick={closeLightbox} aria-label="Zamknij podgląd">
+            <button className="lightbox-close" type="button" onClick={closeLightbox} aria-label={t("galleryGrid.closePreviewAria")}>
               ✕
             </button>
 
@@ -136,7 +139,7 @@ export function GalleryGrid({ items, initialCount = 12, step = 12 }: GalleryGrid
               className="lightbox-nav lightbox-prev"
               type="button"
               onClick={(e) => { e.stopPropagation(); prevImage(); }}
-              aria-label="Poprzednie zdjęcie"
+              aria-label={t("galleryGrid.prevPhotoAria")}
             >
               ‹
             </button>
@@ -152,7 +155,7 @@ export function GalleryGrid({ items, initialCount = 12, step = 12 }: GalleryGrid
             >
               <Image
                 src={activeLightboxItem.src}
-                alt="Agnieszka Paluch Hair"
+                alt={t("common.brandTagline")}
                 fill
                 className="lightbox-photo"
                 sizes="100vw"
@@ -164,7 +167,7 @@ export function GalleryGrid({ items, initialCount = 12, step = 12 }: GalleryGrid
               className="lightbox-nav lightbox-next"
               type="button"
               onClick={(e) => { e.stopPropagation(); nextImage(); }}
-              aria-label="Następne zdjęcie"
+              aria-label={t("galleryGrid.nextPhotoAria")}
             >
               ›
             </button>

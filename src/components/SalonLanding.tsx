@@ -44,14 +44,14 @@ const resolveSystemTheme = (): Theme => {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 };
 
-const galleryItems = [
-  { title: "Strzyżenie i modelowanie", src: "/mostafa_meraji-haircut-6797912_1920.jpg" },
-  { title: "Farbowanie włosów", src: "/mostafa_meraji-haircut-6798047_1920.jpg" },
-  { title: "Baleyaż", src: "/oga_red-hair-2258292_1920.jpg" },
-  { title: "Trwała ondulacja", src: "/ninulia-hairdresser-659139_1920.jpg" },
-  { title: "Loki", src: "/7760815-hair-4657887_1920.jpg" },
-  { title: "Fryzura wieczorowa", src: "/sandryriveraa-bride-4989149_1920.jpg" },
-];
+const GALLERY_ITEM_CONFIG = [
+  { key: "cutAndStyling", src: "/mostafa_meraji-haircut-6797912_1920.jpg" },
+  { key: "hairColoring", src: "/mostafa_meraji-haircut-6798047_1920.jpg" },
+  { key: "balayage", src: "/oga_red-hair-2258292_1920.jpg" },
+  { key: "perm", src: "/ninulia-hairdresser-659139_1920.jpg" },
+  { key: "curls", src: "/7760815-hair-4657887_1920.jpg" },
+  { key: "eveningStyle", src: "/sandryriveraa-bride-4989149_1920.jpg" },
+] as const;
 
 const EyeIcon = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -101,13 +101,7 @@ const ClockIcon = () => (
   </svg>
 );
 
-const LANGUAGE_OPTIONS: Array<{ code: Language; label: string }> = [
-  { code: "pl", label: "Polski" },
-  { code: "en", label: "English" },
-  { code: "de", label: "Deutsch" },
-  { code: "uk", label: "Ukraińska" },
-  { code: "ru", label: "Rosyjski" },
-];
+const LANGUAGE_OPTIONS = SUPPORTED_LANGUAGES;
 
 const getStoredA11ySettings = (): A11ySettings => {
   const defaults: A11ySettings = {
@@ -329,6 +323,14 @@ export function SalonLanding() {
 
   const rawLanguage = i18nextInstance.resolvedLanguage ?? i18nextInstance.language ?? "pl";
   const language = (SUPPORTED_LANGUAGES.find((lng: string) => rawLanguage.startsWith(lng)) ?? "pl") as Language;
+  const languageOptions = LANGUAGE_OPTIONS.map((code) => ({
+    code,
+    label: t(`languageNames.${code}`),
+  }));
+  const galleryItems = GALLERY_ITEM_CONFIG.map((item) => ({
+    title: t(`gallery.cards.${item.key}`),
+    src: item.src,
+  }));
 
   const now = new Date();
   const careerStart = new Date(1992, 8, 1);
@@ -387,7 +389,7 @@ export function SalonLanding() {
   };
 
   const activeLanguageLabel =
-    LANGUAGE_OPTIONS.find((option) => option.code === language)?.label ?? language.toUpperCase();
+    languageOptions.find((option) => option.code === language)?.label ?? language.toUpperCase();
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -436,8 +438,8 @@ export function SalonLanding() {
             </button>
 
             {isLanguageMenuOpen && (
-              <div className="lang-menu" role="menu" aria-label="Language selector">
-                {LANGUAGE_OPTIONS.map((option) => (
+              <div className="lang-menu" role="menu" aria-label={t("nav.languageSelectorAria")}>
+                {languageOptions.map((option) => (
                   <button
                     key={option.code}
                     type="button"
@@ -452,8 +454,8 @@ export function SalonLanding() {
               </div>
             )}
           </div>
-          <button onClick={toggleTheme} className="pill-btn" type="button" aria-label="Toggle theme">
-            <span suppressHydrationWarning>{activeTheme === "light" ? "Dark" : "Light"}</span>
+          <button onClick={toggleTheme} className="pill-btn" type="button" aria-label={t("theme.toggleAria")}>
+            <span suppressHydrationWarning>{activeTheme === "light" ? t("theme.dark") : t("theme.light")}</span>
           </button>
         </div>
 
@@ -461,7 +463,7 @@ export function SalonLanding() {
           className={`hamburger${isMobileMenuOpen ? " is-open" : ""}`}
           type="button"
           onClick={() => setIsMobileMenuOpen((open) => !open)}
-          aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu"}
+          aria-label={isMobileMenuOpen ? t("menu.close") : t("menu.open")}
           aria-expanded={isMobileMenuOpen}
         >
           <span className="ham-bar" />
@@ -488,7 +490,7 @@ export function SalonLanding() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 28, stiffness: 260 }}
-              aria-label="Menu mobilne"
+              aria-label={t("menu.mobileAria")}
             >
               <div className="mobile-menu-top">
                 <p className="brand">
@@ -499,7 +501,7 @@ export function SalonLanding() {
                   className="mobile-menu-close"
                   type="button"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  aria-label="Zamknij menu"
+                  aria-label={t("menu.close")}
                 >
                   ✕
                 </button>
@@ -512,9 +514,9 @@ export function SalonLanding() {
                 <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.contact")}</a>
               </div>
               <div className="mobile-menu-controls">
-                <p className="mobile-menu-section-label">Język / Language</p>
+                <p className="mobile-menu-section-label">{t("nav.languageSection")}</p>
                 <div className="mobile-lang-grid">
-                  {LANGUAGE_OPTIONS.map((option) => (
+                  {languageOptions.map((option) => (
                     <button
                       key={option.code}
                       type="button"
@@ -527,8 +529,15 @@ export function SalonLanding() {
                     </button>
                   ))}
                 </div>
-                <button onClick={toggleTheme} className="pill-btn mobile-theme-btn" type="button" aria-label="Toggle theme">
-                  <span suppressHydrationWarning>{activeTheme === "light" ? "🌙 Dark" : "☀️ Light"}</span>
+                <button
+                  onClick={toggleTheme}
+                  className="pill-btn mobile-theme-btn"
+                  type="button"
+                  aria-label={t("theme.toggleAria")}
+                >
+                  <span suppressHydrationWarning>
+                    {activeTheme === "light" ? `🌙 ${t("theme.dark")}` : `☀️ ${t("theme.light")}`}
+                  </span>
                 </button>
               </div>
             </motion.nav>
@@ -549,7 +558,7 @@ export function SalonLanding() {
           <article className="hero-card glass">
             <Image
               src="/annmariephotography-barbershop-4484297_1920.jpg"
-              alt="Wnetrze salonu"
+              alt={t("hero.imageAltMain")}
               className="hero-bg-photo"
               fill
               priority
@@ -586,7 +595,7 @@ export function SalonLanding() {
           >
             <Image
               src="/mostafa_meraji-barber-shop-6818713_1920.jpg"
-              alt="Stylizacja fryzury"
+              alt={t("hero.imageAltSide")}
               className="hero-right-photo"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 980px) 88vw, 52vw"
@@ -674,7 +683,7 @@ export function SalonLanding() {
                 />
                 <div>
                   <p>{item.title}</p>
-                  <small>Agnieszka Paluch Hair</small>
+                  <small>{t("common.brandTagline")}</small>
                 </div>
               </motion.article>
             ))}
@@ -682,7 +691,7 @@ export function SalonLanding() {
 
           <div className="gallery-actions">
             <Link href="/gallery" className="cta-primary gallery-link-btn">
-              Zobacz pełną galerię
+              {t("gallery.fullLink")}
             </Link>
           </div>
         </motion.section>
@@ -731,7 +740,7 @@ export function SalonLanding() {
           <h2 className="maps-kicker">{t("mapsCta.kicker")}</h2>
           <h2>{t("mapsCta.title")}</h2>
           <p>{t("mapsCta.text")}</p>
-          <p className="maps-stars" aria-label="Google rating 4.8 out of 5 stars">
+          <p className="maps-stars" aria-label={t("mapsCta.starsAria")}>
             <span className="maps-star is-full" aria-hidden="true">
               ★
             </span>
@@ -808,7 +817,7 @@ export function SalonLanding() {
         </motion.section>
       </main>
 
-      <div className="floating-controls" aria-label="Quick actions">
+      <div className="floating-controls" aria-label={t("nav.quickActionsAria")}>
         <div className="floating-group floating-left-group">
           {showBackToTop && (
             <button
