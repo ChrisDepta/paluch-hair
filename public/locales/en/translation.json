@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "backToTop": "Back to top"
+  },
+  "hero": {
+    "badge": "Wroclaw | Paluch Hair",
+    "title": "Precision. Calm. Style.",
+    "subtitle": "If you are looking for a salon where respect, conversation, and careful craft come first, you are welcome on Sztabowa Street in Wroclaw.",
+    "ctaCall": "Call and book your visit",
+    "ctaReview": "Leave a Google Maps review",
+    "rating": "Client rating: 4.8/5 on Google (54 reviews)"
+  },
+  "about": {
+    "title": "About",
+    "intro": "Paluch Hair is a professional salon for people who expect thoughtful service and trustworthy work.",
+    "text": "The owner has over 30 years of hairdressing experience, and the salon has been operating on Sztabowa Street since 2005-10-01. Every service starts with a real conversation and clear expectations.",
+    "counters": {
+      "career": "Years of experience since 09.1992",
+      "salon": "Years of salon operation since 10.2005",
+      "clients": "Estimated number of clients served",
+      "services": "Estimated number of services performed"
+    },
+    "points": [
+      "Careful consultation before cutting and coloring",
+      "Technical precision aligned with agreed scope",
+      "Service culture based on respect and calm communication"
+    ],
+    "highlights": [
+      "30+ years of experience",
+      "Sztabowa, Wroclaw since 2005-10-01",
+      "Paluch Hair | paluch-hair.pl"
+    ],
+    "since": "This salon is for people who value fair treatment, professional results, and a warm atmosphere without rush."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "hint": "These are our sample results."
+  },
+  "reviews": {
+    "title": "Client Reviews",
+    "subtitle": "Real voices from Google Maps",
+    "items": [
+      {
+        "name": "Faustyna Szczepanska",
+        "text": "I warmly recommend this hair salon. Great service and very kind stylist. The hairstyle lasted beautifully for days."
+      },
+      {
+        "name": "Wioletta Kubisz",
+        "text": "I sincerely recommend Agnieszka. She really knows what she is doing and I always leave the salon happy."
+      },
+      {
+        "name": "Hubert 304",
+        "text": "I recommend this place. It is not about glamour, it is about real results and a genuine atmosphere."
+      },
+      {
+        "name": "Maryla Kmiecik",
+        "text": "I have been cutting my hair with Agnieszka for 8 years and I am always very satisfied."
+      },
+      {
+        "name": "Marta Lach",
+        "text": "There is no better stylist for me. Professional, warm, and highly experienced."
+      }
+    ]
+  },
+  "mapsCta": {
+    "kicker": "Reviews about us on Google",
+    "title": "Share your feedback after your visit",
+    "text": "Your review helps new clients choose a trusted salon and motivates us to keep delivering great service.",
+    "rating": "4.8 / 5",
+    "primary": "Add your review"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "women": {
+      "title": "Women",
+      "subtitle": "Hair length",
+      "columns": {
+        "service": "Service",
+        "short": "short",
+        "medium": "medium",
+        "long": "long"
+      },
+      "items": [
+        { "name": "Cut", "short": "90 PLN", "medium": "100 PLN", "long": "110 PLN" },
+        { "name": "Cut + styling", "short": "150 PLN", "medium": "170 PLN", "long": "180 - 200 PLN" },
+        { "name": "Styling", "short": "80 PLN", "medium": "90 PLN", "long": "100 - 120 PLN" },
+        { "name": "Balayage", "short": "270 PLN", "medium": "280 - 330 PLN", "long": "340 - 500 PLN" },
+        { "name": "Coloring", "short": "250 PLN", "medium": "260 - 320 PLN", "long": "320 - 500 PLN" },
+        { "name": "Color application", "short": "90 PLN*", "medium": "100 PLN*", "long": "120 PLN*" },
+        { "name": "Ombre", "short": "-", "medium": "350 - 500 PLN", "long": "510 - 800 PLN" },
+        {
+          "name": "Decolorization + coloring",
+          "short": "400 - 500 PLN",
+          "medium": "510 - 600 PLN",
+          "long": "600 - 1000 PLN"
+        },
+        { "name": "Fringe trim", "short": "-", "medium": "-", "long": "30 PLN*" },
+        { "name": "Perm", "short": "230 PLN", "medium": "260 PLN", "long": "300 - 400 PLN" },
+        { "name": "Root-lift perm (styling)", "short": "230 PLN", "medium": "260 PLN", "long": "300 - 400 PLN" },
+        { "name": "Updo / evening style", "short": "-", "medium": "120 PLN", "long": "150 - 250 PLN" },
+        { "name": "Curls", "short": "-", "medium": "150 PLN", "long": "160 - 200 PLN" },
+        { "name": "Reconstruction treatment", "short": "-", "medium": "120 PLN*", "long": "150 PLN*" },
+        { "name": "Lightening + toning", "short": "300 PLN", "medium": "350 - 400 PLN", "long": "450 - 600 PLN" }
+      ]
+    },
+    "men": {
+      "title": "Men",
+      "items": [
+        { "name": "Haircut", "price": "70 PLN" },
+        { "name": "Clipper cut (single length)", "price": "50 PLN" },
+        { "name": "Long hair cut", "price": "100 PLN" },
+        { "name": "Beard trim", "price": "50 PLN" },
+        { "name": "Mustache trim", "price": "20 PLN" }
+      ]
+    },
+    "extensions": {
+      "title": "Hair extensions and thickening",
+      "installTitle": "Creative method",
+      "correctionTitle": "Creative method correction",
+      "consult": "Free consultation",
+      "installItems": [
+        { "name": "Installation up to 100 strands", "price": "550 PLN" },
+        { "name": "Installation up to 125 strands", "price": "600 PLN" },
+        { "name": "Installation up to 150 strands", "price": "650 PLN" },
+        { "name": "Installation up to 200 strands", "price": "700 PLN" }
+      ],
+      "correctionItems": [
+        { "name": "Correction up to 100 strands", "price": "600 PLN" },
+        { "name": "Correction up to 125 strands", "price": "650 PLN" },
+        { "name": "Correction up to 150 strands", "price": "700 PLN" },
+        { "name": "Correction up to 200 strands", "price": "750 PLN" }
+      ]
+    },
+    "note": "* Price does not include cutting and styling. For very dense or very long hair, the final cost may change."
+  },
+  "contact": {
+    "title": "Contact",
+    "phoneLabel": "Phone",
+    "phone": "+48 71 796 46 64",
+    "company": "Paluch Hair",
+    "addressLabel": "Address",
+    "address": "Sztabowa 6/8, 53-327 Wroclaw, Poland",
+    "hoursTitle": "Opening Hours",
+    "hours": [
+      { "day": "Monday - Friday", "value": "09:00-19:00" },
+      { "day": "Saturday", "value": "09:00-14:00" }
+    ],
+    "maps": "Open Google Maps profile",
+    "noForm": "Appointments are made by phone only."
+  },
+  "a11y": {
+    "openAria": "Accessibility settings",
+    "dialogAria": "Accessibility settings",
+    "closeAria": "Close accessibility settings",
+    "title": "Accessibility",
+    "intro": "Adjust the page to your needs: better readability, stronger contrast, and easier links.",
+    "fontScale": "Text size",
+    "fontScaleSliderAria": "Text size slider",
+    "highContrast": "High contrast",
+    "underlineLinks": "Underline links",
+    "readableTypography": "Readable typography",
+    "reset": "Reset settings"
+  }
+}

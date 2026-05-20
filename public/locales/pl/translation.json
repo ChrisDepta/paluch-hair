@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "gallery": "Galeria",
+    "pricing": "Cennik",
+    "contact": "Kontakt",
+    "backToTop": "Powrót do góry"
+  },
+  "hero": {
+    "badge": "Wrocław | Paluch Hair",
+    "title": "Precyzja. Spokój. Styl.",
+    "subtitle": "Jeśli szukasz miejsca, w którym liczy się rozmowa, szacunek i rzetelna praca przy każdej wizycie, zapraszamy na Sztabową we Wrocławiu.",
+    "ctaCall": "Zadzwoń i umów termin",
+    "ctaReview": "Dodaj opinię na Google Maps",
+    "rating": "Ocena klientek: 4.8/5 w Google (54 opinie)"
+  },
+  "about": {
+    "title": "O mnie",
+    "intro": "Paluch Hair to profesjonalny salon fryzjerski dla osób, które chcą być dobrze obsłużone i spokojnie oddać się w ręce doświadczonej osoby.",
+    "text": "Właścicielka strzyże od ponad 30 lat, a salon przy ulicy Sztabowej działa nieprzerwanie od 2005-10-01. Każda usługa zaczyna się od rozmowy i dopasowania rozwiązania do potrzeb klienta.",
+    "points": [
+      "Rzetelna konsultacja przed strzyżeniem i koloryzacją",
+      "Dokładna praca techniczna zgodna z cennikiem i ustaleniami",
+      "Kultura obsługi oparta na szacunku i spokojnym kontakcie"
+    ],
+    "counters": {
+      "career": "Lata doświadczenia",
+      "salon": "Lata działania zakładu",
+      "clients": "Ilość obsłużonych klientów",
+      "services": "Ilość wykonanych usług"
+    },
+    "highlights": [
+      "Ponad 30 lat doświadczenia",
+      "Sztabowa, Wrocław od 2005-10-01",
+      "Paluch Hair | paluch-hair.pl"
+    ],
+    "since": "To miejsce dla osób, które cenią uczciwe podejście, profesjonalną usługę i dobrą atmosferę bez pośpiechu."
+  },
+  "gallery": {
+    "title": "Galeria",
+    "hint": "To są nasze przykładowe realizacje."
+  },
+  "reviews": {
+    "title": "Opinie klientów",
+    "subtitle": "Prawdziwe recenzje z wizytówki Google",
+    "items": [
+      {
+        "name": "Dorota",
+        "text": "Chodzę do tego salonu z 15 lat, ja, mój mąż, mój syn i grono znajomych. Zawsze wszyscy jesteśmy bardzo zadowoleni. Agnieszka jest naszym fryzjerem od bardzo dawna (zdarza się, że zastąpi ją Beata - też ok). Miło i sympatycznie. Niestety nie piją i nie podają alkoholu (jak sugeruje Pani Anna). Z czystym sumieniem mogę każdemu polecić."
+      },
+      {
+        "name": "Wioletta Kubisz",
+        "text": "Dzień dobry, serdecznie polecam panią Agnieszkę. Wie, co robi, wychodzę z salonu zawsze zadowolona."
+      },
+      {
+        "name": "Hubert 304",
+        "text": "Polecam ten zakład fryzjerski. Z pewnością nie wygląda jak odwalony i rekomendowany przez sławnych celebrytów salon, ale za to liczy się efekt i atmosfera."
+      },
+      {
+        "name": "Maryla Kmicik",
+        "text": "Obcinam włosy u pani Agnieszki od 8 lat i jestem bardzo zadowolona. Potrafi doradzić fryzurę i tworzy miłą atmosferę."
+      },
+      {
+        "name": "Marta Lach",
+        "text": "Nie ma lepszej fryzjerki pod słońcem. Przekochana, profesjonalna i z ogromnym doświadczeniem."
+      }
+    ]
+  },
+  "mapsCta": {
+    "kicker": "Opinie o nas w Google",
+    "title": "Podziel się swoją opinią po wizycie",
+    "text": "Twoja opinia pomaga kolejnym osobom wybrać sprawdzony salon i daje nam motywację do dalszej pracy.",
+    "rating": "4,8 / 5",
+    "primary": "Dodaj swoją opinię"
+  },
+  "pricing": {
+    "title": "Cennik",
+    "women": {
+      "title": "Panie",
+      "subtitle": "Długość włosów",
+      "columns": {
+        "service": "Usługa",
+        "short": "krótkie",
+        "medium": "średnie",
+        "long": "długie"
+      },
+      "items": [
+        { "name": "Strzyżenie", "short": "90 zł", "medium": "100 zł", "long": "110 zł" },
+        { "name": "Strzyżenie + modelowanie", "short": "150 zł", "medium": "170 zł", "long": "180 - 200 zł" },
+        { "name": "Modelowanie", "short": "80 zł", "medium": "90 zł", "long": "100 - 120 zł" },
+        { "name": "Baleyaż", "short": "270 zł", "medium": "280 - 330 zł", "long": "340 - 500 zł" },
+        { "name": "Farbowanie włosów", "short": "250 zł", "medium": "260 - 320 zł", "long": "320 - 500 zł" },
+        { "name": "Nałożenie farby", "short": "90 zł*", "medium": "100 zł*", "long": "120 zł*" },
+        { "name": "Ombre", "short": "-", "medium": "350 - 500 zł", "long": "510 - 800 zł" },
+        {
+          "name": "Dekoloryzacja (ściąganie koloru) + farbowanie",
+          "short": "400 - 500 zł",
+          "medium": "510 - 600 zł",
+          "long": "600 - 1000 zł"
+        },
+        { "name": "Strzyżenie grzywki", "short": "-", "medium": "-", "long": "30 zł*" },
+        { "name": "Trwała ondulacja", "short": "230 zł", "medium": "260 zł", "long": "300 - 400 zł" },
+        { "name": "Trwała podnosząca (styling)", "short": "230 zł", "medium": "260 zł", "long": "300 - 400 zł" },
+        { "name": "Kok / fryzura wieczorowa", "short": "-", "medium": "120 zł", "long": "150 - 250 zł" },
+        { "name": "Loki", "short": "-", "medium": "150 zł", "long": "160 - 200 zł" },
+        { "name": "Zabieg odbudowujący (regeneracja)", "short": "-", "medium": "120 zł*", "long": "150 zł*" },
+        { "name": "Rozjaśnianie + tonowanie", "short": "300 zł", "medium": "350 - 400 zł", "long": "450 - 600 zł" }
+      ]
+    },
+    "men": {
+      "title": "Panowie",
+      "items": [
+        { "name": "Strzyżenie", "price": "70 zł" },
+        { "name": "Strzyżenie maszynką (jedna długość)", "price": "50 zł" },
+        { "name": "Strzyżenie długich włosów", "price": "100 zł" },
+        { "name": "Strzyżenie brody", "price": "50 zł" },
+        { "name": "Strzyżenie wąsów", "price": "20 zł" }
+      ]
+    },
+    "extensions": {
+      "title": "Przedłużanie oraz zagęszczanie włosów",
+      "installTitle": "Metoda kreatywna",
+      "correctionTitle": "Korekta metodą kreatywną",
+      "consult": "Darmowa konsultacja",
+      "installItems": [
+        { "name": "Założenie do 100 pasm", "price": "550 zł" },
+        { "name": "Założenie do 125 pasm", "price": "600 zł" },
+        { "name": "Założenie do 150 pasm", "price": "650 zł" },
+        { "name": "Założenie do 200 pasm", "price": "700 zł" }
+      ],
+      "correctionItems": [
+        { "name": "Korekta do 100 pasm", "price": "600 zł" },
+        { "name": "Korekta do 125 pasm", "price": "650 zł" },
+        { "name": "Korekta do 150 pasm", "price": "700 zł" },
+        { "name": "Korekta do 200 pasm", "price": "750 zł" }
+      ]
+    },
+    "note": "* Cena nie obejmuje strzyżenia oraz modelowania. Przy włosach bardzo gęstych lub bardzo długich cena może ulec zmianie."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "phoneLabel": "Telefon",
+    "phone": "+48 71 796 46 64",
+    "company": "Paluch Hair",
+    "addressLabel": "Adres",
+    "address": "Sztabowa 6/8, 53-327 Wrocław, Polska",
+    "hoursTitle": "Godziny otwarcia",
+    "hours": [
+      { "day": "Poniedziałek - Piątek", "value": "09:00-19:00" },
+      { "day": "Sobota", "value": "09:00-14:00" }
+    ],
+    "maps": "Zobacz wizytówkę Google Maps",
+    "noForm": "Rezerwacja odbywa się telefonicznie."
+  },
+  "a11y": {
+    "openAria": "Ustawienia dostępności",
+    "dialogAria": "Ustawienia dostępności",
+    "closeAria": "Zamknij ustawienia dostępności",
+    "title": "Ułatwienia dostępności",
+    "intro": "Dostosuj widok strony do swoich potrzeb: większa czytelność, kontrast i wygodniejsze linki.",
+    "fontScale": "Rozmiar tekstu",
+    "fontScaleSliderAria": "Suwak rozmiaru tekstu",
+    "highContrast": "Wysoki kontrast",
+    "underlineLinks": "Podkreśl linki",
+    "readableTypography": "Czytelniejsza typografia",
+    "reset": "Reset ustawień"
+  }
+}

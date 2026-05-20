@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Start",
+    "about": "Uber mich",
+    "gallery": "Galerie",
+    "pricing": "Preise",
+    "contact": "Kontakt",
+    "backToTop": "Nach oben"
+  },
+  "hero": {
+    "badge": "Wroclaw | Premium Friseursalon",
+    "title": "Prazision. Ruhe. Stil.",
+    "subtitle": "Stil, Licht und Form. Ich kreiere individuelle Schnitte und Farben, die den Charakter unterstreichen.",
+    "ctaCall": "Anrufen und Termin buchen",
+    "ctaReview": "Google-Bewertung abgeben",
+    "rating": "Bewertung: 4.8/5 bei Google (54 Bewertungen)"
+  },
+  "about": {
+    "title": "Uber mich",
+    "text": "Ich bin Agnieszka Paluch und arbeite seit Jahren mit Haaren wie mit einem Premium-Material. Ich verbinde technische Prazision mit modernem Stil.",
+    "counters": {
+      "career": "Jahre Erfahrung seit 09.1992",
+      "salon": "Jahre Salonbetrieb seit 10.2005",
+      "clients": "Geschaetzte Anzahl bedienter Kundinnen und Kunden",
+      "services": "Geschaetzte Anzahl ausgefuehrter Leistungen"
+    },
+    "points": [
+      "Individuelle Beratung vor jeder Behandlung",
+      "Naturliche Ubergange und prazise Linien",
+      "Angenehme Atmosphare und punktliche Termine"
+    ]
+  },
+  "gallery": {
+    "title": "Galerie",
+    "hint": "Das sind unsere beispielhaften Umsetzungen."
+  },
+  "reviews": {
+    "title": "Kundenmeinungen",
+    "subtitle": "Echte Stimmen aus Google Maps",
+    "items": [
+      { "name": "Faustyna Szczepanska", "text": "Ich empfehle diesen Salon herzlich. Toller Service und sehr nette Friseurin." },
+      { "name": "Wioletta Kubisz", "text": "Ich empfehle Agnieszka sehr. Ich verlasse den Salon immer zufrieden." },
+      { "name": "Hubert 304", "text": "Ich empfehle diesen Salon. Hier zahlen Ergebnisse und Atmosphare." },
+      { "name": "Maryla Kmiecik", "text": "Seit 8 Jahren schneide ich hier meine Haare und bin sehr zufrieden." },
+      { "name": "Marta Lach", "text": "Sehr professionell, herzlich und erfahren." }
+    ]
+  },
+  "pricing": {
+    "title": "Preise",
+    "women": {
+      "title": "Damen",
+      "subtitle": "Haarlange",
+      "columns": {
+        "service": "Leistung",
+        "short": "kurz",
+        "medium": "mittel",
+        "long": "lang"
+      },
+      "items": [
+        { "name": "Haarschnitt", "short": "90 zl", "medium": "100 zl", "long": "110 zl" },
+        { "name": "Haarschnitt + Styling", "short": "150 zl", "medium": "170 zl", "long": "180 - 200 zl" },
+        { "name": "Styling", "short": "80 zl", "medium": "90 zl", "long": "100 - 120 zl" },
+        { "name": "Balayage", "short": "270 zl", "medium": "280 - 330 zl", "long": "340 - 500 zl" },
+        { "name": "Farbung", "short": "250 zl", "medium": "260 - 320 zl", "long": "320 - 500 zl" },
+        { "name": "Farbauftrag", "short": "90 zl*", "medium": "100 zl*", "long": "120 zl*" },
+        { "name": "Ombre", "short": "-", "medium": "350 - 500 zl", "long": "510 - 800 zl" },
+        { "name": "Entfarbung + Farbung", "short": "400 - 500 zl", "medium": "510 - 600 zl", "long": "600 - 1000 zl" },
+        { "name": "Pony schneiden", "short": "-", "medium": "-", "long": "30 zl*" },
+        { "name": "Dauerwelle", "short": "230 zl", "medium": "260 zl", "long": "300 - 400 zl" },
+        { "name": "Ansatz-Lift Dauerwelle", "short": "230 zl", "medium": "260 zl", "long": "300 - 400 zl" },
+        { "name": "Abendfrisur", "short": "-", "medium": "120 zl", "long": "150 - 250 zl" },
+        { "name": "Locken", "short": "-", "medium": "150 zl", "long": "160 - 200 zl" },
+        { "name": "Regeneration", "short": "-", "medium": "120 zl*", "long": "150 zl*" },
+        { "name": "Aufhellung + Toner", "short": "300 zl", "medium": "350 - 400 zl", "long": "450 - 600 zl" }
+      ]
+    },
+    "men": {
+      "title": "Herren",
+      "items": [
+        { "name": "Haarschnitt", "price": "70 zl" },
+        { "name": "Maschinenschnitt", "price": "50 zl" },
+        { "name": "Lange Haare schneiden", "price": "100 zl" },
+        { "name": "Bart trimmen", "price": "50 zl" },
+        { "name": "Schnurrbart trimmen", "price": "20 zl" }
+      ]
+    },
+    "extensions": {
+      "title": "Haarverlangerung und Verdichtung",
+      "installTitle": "Kreative Methode",
+      "correctionTitle": "Korrektur kreative Methode",
+      "consult": "Kostenlose Beratung",
+      "installItems": [
+        { "name": "Anbringen bis 100 Strahnen", "price": "550 zl" },
+        { "name": "Anbringen bis 125 Strahnen", "price": "600 zl" },
+        { "name": "Anbringen bis 150 Strahnen", "price": "650 zl" },
+        { "name": "Anbringen bis 200 Strahnen", "price": "700 zl" }
+      ],
+      "correctionItems": [
+        { "name": "Korrektur bis 100 Strahnen", "price": "600 zl" },
+        { "name": "Korrektur bis 125 Strahnen", "price": "650 zl" },
+        { "name": "Korrektur bis 150 Strahnen", "price": "700 zl" },
+        { "name": "Korrektur bis 200 Strahnen", "price": "750 zl" }
+      ]
+    },
+    "note": "* Preis ohne Schnitt und Styling. Bei sehr dichtem oder langem Haar kann sich der Endpreis andern."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "phoneLabel": "Telefon",
+    "phone": "+48 71 796 46 64",
+    "company": "Agnieszka Gawel-Paluch",
+    "addressLabel": "Adresse",
+    "address": "Sztabowa 6/8, 53-327 Wroclaw, Polen",
+    "hoursTitle": "Offnungszeiten",
+    "hours": [
+      { "day": "Montag - Freitag", "value": "09:00-19:00" },
+      { "day": "Samstag", "value": "09:00-14:00" }
+    ],
+    "maps": "Google Maps Profil offnen",
+    "noForm": "Reservierungen nur telefonisch."
+  },
+  "a11y": {
+    "openAria": "Barrierefreiheitseinstellungen",
+    "dialogAria": "Barrierefreiheitseinstellungen",
+    "closeAria": "Barrierefreiheitseinstellungen schliessen",
+    "title": "Barrierefreiheit",
+    "intro": "Passe die Ansicht an deine Bedurfnisse an: bessere Lesbarkeit, hoherer Kontrast und bequemere Links.",
+    "fontScale": "Textgrosse",
+    "fontScaleSliderAria": "Schieberegler fur Textgrosse",
+    "highContrast": "Hoher Kontrast",
+    "underlineLinks": "Links unterstreichen",
+    "readableTypography": "Lesbare Typografie",
+    "reset": "Einstellungen zurucksetzen"
+  }
+}

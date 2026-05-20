@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Golovna",
+    "about": "Pro mene",
+    "gallery": "Galeria",
+    "pricing": "Ciny",
+    "contact": "Kontakt",
+    "backToTop": "Do hory"
+  },
+  "hero": {
+    "badge": "Vroclav | Premium perukarska studio",
+    "title": "Tochnist. Spokiy. Styl.",
+    "subtitle": "Styl, svitlo i forma. Ja stvoryuyu indyvidualni stryzhky ta koloruvannya, yaki pidkreslyuyut charakter.",
+    "ctaCall": "Zatelefonuvaty i zapisatys",
+    "ctaReview": "Zalyshyty vidguk na Google Maps",
+    "rating": "Ocinka klientiv: 4.8/5 u Google (54 vidguky)"
+  },
+  "about": {
+    "title": "Pro mene",
+    "text": "Mene zvaty Agnieszka Paluch. Ya pratsyuyu z volossyam yak z premium-materialom, poyednuyuchy tochnist i suchasnyy styl.",
+    "counters": {
+      "career": "Roky dosvidu vid 09.1992",
+      "salon": "Roky roboty salonu vid 10.2005",
+      "clients": "Otsinochna kilkist obslugovanykh klientiv",
+      "services": "Otsinochna kilkist vykonanykh posluh"
+    },
+    "points": [
+      "Indyvidualna konsultatsiya pered kozhnoyu posluhoyu",
+      "Pryrodni perehody ta tochnyi kontur",
+      "Komfortna atmosfera ta punktualni vizyty"
+    ]
+  },
+  "gallery": {
+    "title": "Galeria",
+    "hint": "Tse nashi prykladovi roboty."
+  },
+  "reviews": {
+    "title": "Vidguky klientiv",
+    "subtitle": "Spravzhni vidguky z Google Maps",
+    "items": [
+      { "name": "Faustyna Szczepanska", "text": "Shchyro rekomenduyu tsey salon. Chudovyy servis i duzhe pryyemna perukarka." },
+      { "name": "Wioletta Kubisz", "text": "Duzhe rekomenduyu pani Agnieszku. Zavzhdy vykhodyu zadovolena." },
+      { "name": "Hubert 304", "text": "Rekomenduyu tse mistse. Tut vazhlyvyi rezultat i atmosfera." },
+      { "name": "Maryla Kmiecik", "text": "Khodzhu do pani Agnieszky vzhe 8 rokiv i duzhe zadovolena rezultatom." },
+      { "name": "Marta Lach", "text": "Duzhe profesiyno, teplo ta z velykym dosvidom." }
+    ]
+  },
+  "pricing": {
+    "title": "Ciny",
+    "women": {
+      "title": "Zhinky",
+      "subtitle": "Dovzhyna volossya",
+      "columns": {
+        "service": "Posluha",
+        "short": "korotke",
+        "medium": "serednye",
+        "long": "dovhe"
+      },
+      "items": [
+        { "name": "Stryzhka", "short": "90 zl", "medium": "100 zl", "long": "110 zl" },
+        { "name": "Stryzhka + ukladan", "short": "150 zl", "medium": "170 zl", "long": "180 - 200 zl" },
+        { "name": "Ukladannya", "short": "80 zl", "medium": "90 zl", "long": "100 - 120 zl" },
+        { "name": "Balejazh", "short": "270 zl", "medium": "280 - 330 zl", "long": "340 - 500 zl" },
+        { "name": "Farbuvannya", "short": "250 zl", "medium": "260 - 320 zl", "long": "320 - 500 zl" },
+        { "name": "Nanesennya farby", "short": "90 zl*", "medium": "100 zl*", "long": "120 zl*" },
+        { "name": "Ombre", "short": "-", "medium": "350 - 500 zl", "long": "510 - 800 zl" },
+        { "name": "Znyattya koloru + farbuvannya", "short": "400 - 500 zl", "medium": "510 - 600 zl", "long": "600 - 1000 zl" },
+        { "name": "Stryzhka chubchyka", "short": "-", "medium": "-", "long": "30 zl*" },
+        { "name": "Khimichna zavivka", "short": "230 zl", "medium": "260 zl", "long": "300 - 400 zl" },
+        { "name": "Pidnyattya koryniv", "short": "230 zl", "medium": "260 zl", "long": "300 - 400 zl" },
+        { "name": "Vechirnya zachiska", "short": "-", "medium": "120 zl", "long": "150 - 250 zl" },
+        { "name": "Lokony", "short": "-", "medium": "150 zl", "long": "160 - 200 zl" },
+        { "name": "Vidnovlyuyucha protsedura", "short": "-", "medium": "120 zl*", "long": "150 zl*" },
+        { "name": "Osvitlennya + tonuvannya", "short": "300 zl", "medium": "350 - 400 zl", "long": "450 - 600 zl" }
+      ]
+    },
+    "men": {
+      "title": "Choloviky",
+      "items": [
+        { "name": "Stryzhka", "price": "70 zl" },
+        { "name": "Mashynkoyu (odna dovzhyna)", "price": "50 zl" },
+        { "name": "Stryzhka dovhoho volossya", "price": "100 zl" },
+        { "name": "Pidstrygannya borody", "price": "50 zl" },
+        { "name": "Pidstrygannya vusiv", "price": "20 zl" }
+      ]
+    },
+    "extensions": {
+      "title": "Naroshchuvannya ta zahushchennya volossya",
+      "installTitle": "Kreatyvnyy metod",
+      "correctionTitle": "Korektsiya kreatyvnym metodom",
+      "consult": "Bezkoshtovna konsultatsiya",
+      "installItems": [
+        { "name": "Do 100 pasom", "price": "550 zl" },
+        { "name": "Do 125 pasom", "price": "600 zl" },
+        { "name": "Do 150 pasom", "price": "650 zl" },
+        { "name": "Do 200 pasom", "price": "700 zl" }
+      ],
+      "correctionItems": [
+        { "name": "Korektsiya do 100 pasom", "price": "600 zl" },
+        { "name": "Korektsiya do 125 pasom", "price": "650 zl" },
+        { "name": "Korektsiya do 150 pasom", "price": "700 zl" },
+        { "name": "Korektsiya do 200 pasom", "price": "750 zl" }
+      ]
+    },
+    "note": "* Vartist ne vklyuchaye stryzhku ta ukladan. Dlya duzhe hustogo abo dovgogo volossya tsina mozhe zminytys."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "phoneLabel": "Telefon",
+    "phone": "+48 71 796 46 64",
+    "company": "Agnieszka Gawel-Paluch",
+    "addressLabel": "Adres",
+    "address": "Sztabowa 6/8, 53-327 Wroclaw, Poland",
+    "hoursTitle": "Hodyny roboty",
+    "hours": [
+      { "day": "Ponedilok - Pyatnytsya", "value": "09:00-19:00" },
+      { "day": "Subota", "value": "09:00-14:00" }
+    ],
+    "maps": "Vidkryty profil Google Maps",
+    "noForm": "Zapys lyshe telefonom."
+  },
+  "a11y": {
+    "openAria": "Nalashtuvannya dostupnosti",
+    "dialogAria": "Nalashtuvannya dostupnosti",
+    "closeAria": "Zakryty nalashtuvannya dostupnosti",
+    "title": "Dostupnist",
+    "intro": "Nalashtuyte vyglyad storinky pid svoi potreby: krashcha chytabelnist, vyshchyy kontrast i zruchnishi posylannya.",
+    "fontScale": "Rozmir tekstu",
+    "fontScaleSliderAria": "Povzunok rozmiru tekstu",
+    "highContrast": "Vysokyy kontrast",
+    "underlineLinks": "Pidkreslyty posylannya",
+    "readableTypography": "Chytabelnisha typohrafiya",
+    "reset": "Skynuty nalashtuvannya"
+  }
+}
