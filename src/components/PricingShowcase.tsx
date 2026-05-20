@@ -17,6 +17,12 @@ type WomenPriceItem = {
   long: string;
 };
 
+type LengthPrice = {
+  key: "short" | "medium" | "long";
+  label: string;
+  value: string;
+};
+
 type WomenPricing = {
   title: string;
   subtitle: string;
@@ -51,12 +57,38 @@ const sectionAnimation = {
   visible: { opacity: 1, y: 0 },
 };
 
+const isValueAvailable = (value: string) => {
+  const normalized = value.trim();
+  return normalized !== "" && normalized !== "-";
+};
+
+const toMobileLengthPrices = (prices: LengthPrice[], allLengthsLabel: string): LengthPrice[] => {
+  const available = prices.filter((entry) => isValueAvailable(entry.value));
+
+  if (available.length <= 1) {
+    return available.map((entry) => ({
+      ...entry,
+      label: allLengthsLabel,
+    }));
+  }
+
+  if (available.length === 2) {
+    return available.map((entry) => ({
+      ...entry,
+      label: entry.key === "long" ? prices[2].label : prices[1].label,
+    }));
+  }
+
+  return available;
+};
+
 type PricingShowcaseProps = {
   showMoreLink?: boolean;
 };
 
 export function PricingShowcase({ showMoreLink = false }: PricingShowcaseProps) {
   const { t } = useTranslation();
+  const allLengthsLabel = t("pricing.women.allLengths", { defaultValue: "każda długość" });
 
   const womenPricingRaw = t("pricing.women", { returnObjects: true });
   const womenPricingDefault: WomenPricing = {
@@ -148,12 +180,31 @@ export function PricingShowcase({ showMoreLink = false }: PricingShowcaseProps) 
           </div>
 
           {womenPricing.items.map((item) => (
-            <div className="women-table women-row" key={item.name}>
-              <span>{item.name}</span>
-              <span>{item.short}</span>
-              <span>{item.medium}</span>
-              <span>{item.long}</span>
-            </div>
+            (() => {
+              const prices: LengthPrice[] = [
+                { key: "short", label: womenPricing.columns.short, value: item.short },
+                { key: "medium", label: womenPricing.columns.medium, value: item.medium },
+                { key: "long", label: womenPricing.columns.long, value: item.long },
+              ];
+              const mobilePrices = toMobileLengthPrices(prices, allLengthsLabel);
+
+              return (
+                <div className="women-table women-row" key={item.name}>
+                  <span className="women-service">{item.name}</span>
+                  <span className="women-price-desktop">{item.short}</span>
+                  <span className="women-price-desktop">{item.medium}</span>
+                  <span className="women-price-desktop">{item.long}</span>
+
+                  <div className="women-mobile-prices" aria-label={`${item.name} - długości włosów`}>
+                    {mobilePrices.map((entry) => (
+                      <span className="women-mobile-price" key={`${item.name}-${entry.key}`} data-label={entry.label}>
+                        {entry.value}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()
           ))}
         </article>
 

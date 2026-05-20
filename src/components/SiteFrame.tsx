@@ -3,7 +3,7 @@
 import { ReactNode, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import FocusTrap from "focus-trap-react";
 import { useTranslation } from "react-i18next";
 import i18nextInstance, { SUPPORTED_LANGUAGES } from "../i18n";
@@ -98,6 +98,7 @@ export function SiteFrame({ children }: SiteFrameProps) {
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const [isAccessibilityOpen, setIsAccessibilityOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isNavScrolled, setIsNavScrolled] = useState(false);
   const [a11ySettings, setA11ySettings] = useState<A11ySettings>(() => getStoredA11ySettings());
 
@@ -164,6 +165,22 @@ export function SiteFrame({ children }: SiteFrameProps) {
   }, [isAccessibilityOpen]);
 
   useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMobileMenuOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
     if (typeof window === "undefined") {
       return;
     }
@@ -207,6 +224,7 @@ export function SiteFrame({ children }: SiteFrameProps) {
   const changeLanguage = (nextLanguage: Language) => {
     i18nextInstance.changeLanguage(nextLanguage);
     setIsLanguageMenuOpen(false);
+    setIsMobileMenuOpen(false);
   };
 
   const scrollToTop = () => {
@@ -278,7 +296,86 @@ export function SiteFrame({ children }: SiteFrameProps) {
             <span suppressHydrationWarning>{activeTheme === "light" ? "Dark" : "Light"}</span>
           </button>
         </div>
+
+        <button
+          className={`hamburger${isMobileMenuOpen ? " is-open" : ""}`}
+          type="button"
+          onClick={() => setIsMobileMenuOpen((open) => !open)}
+          aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu"}
+          aria-expanded={isMobileMenuOpen}
+        >
+          <span className="ham-bar" />
+          <span className="ham-bar" />
+          <span className="ham-bar" />
+        </button>
       </header>
+
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <>
+            <motion.div
+              className="mobile-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.22 }}
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-hidden="true"
+            />
+            <motion.nav
+              className="mobile-menu"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 28, stiffness: 260 }}
+              aria-label="Menu mobilne"
+            >
+              <div className="mobile-menu-top">
+                <p className="brand">
+                  <Image src="/logoTransparentWheel.png" alt="" className="brand-logo" width={28} height={28} />
+                  <span>Paluch Hair</span>
+                </p>
+                <button
+                  className="mobile-menu-close"
+                  type="button"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  aria-label="Zamknij menu"
+                >
+                  ✕
+                </button>
+              </div>
+              <div className="mobile-menu-links">
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.home")}</Link>
+                <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.about")}</Link>
+                <Link href="/gallery" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.gallery")}</Link>
+                <Link href="/#reviews" onClick={() => setIsMobileMenuOpen(false)}>{t("reviews.title")}</Link>
+                <Link href="/pricing" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.pricing")}</Link>
+                <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>{t("nav.contact")}</Link>
+              </div>
+              <div className="mobile-menu-controls">
+                <p className="mobile-menu-section-label">Język / Language</p>
+                <div className="mobile-lang-grid">
+                  {LANGUAGE_OPTIONS.map((option) => (
+                    <button
+                      key={option.code}
+                      type="button"
+                      className={`lang-option${language === option.code ? " is-active" : ""}`}
+                      onClick={() => changeLanguage(option.code)}
+                      role="menuitem"
+                    >
+                      <span>{option.label}</span>
+                      <small>{option.code.toUpperCase()}</small>
+                    </button>
+                  ))}
+                </div>
+                <button onClick={toggleTheme} className="pill-btn mobile-theme-btn" type="button" aria-label="Toggle theme">
+                  <span suppressHydrationWarning>{activeTheme === "light" ? "🌙 Dark" : "☀️ Light"}</span>
+                </button>
+              </div>
+            </motion.nav>
+          </>
+        )}
+      </AnimatePresence>
 
       {children}
 
